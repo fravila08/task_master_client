@@ -1,0 +1,17 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+.home-para {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.home-para strong {
+  color: var(--cyan);
+  font-weight: normal;
+}

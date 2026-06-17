@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #0f0f1a;
+  --bg-input: #0d0d1f;
+  --cyan: #00f0ff;
+  --cyan-dim: #00b8c8;
+  --red: #ff003c;
+  --yellow: #f5c400;
+  --text: #e0e0f0;
+  --text-dim: #8888aa;
+  --border: #1a1a3a;
+  --glow-cyan: 0 0 8px #00f0ff88, 0 0 20px #00f0ff33;
+  --glow-red: 0 0 8px #ff003c88, 0 0 20px #ff003c33;
+  --glow-yellow: 0 0 8px #f5c40088, 0 0 20px #f5c40033;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: var(--glow-cyan);
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: 'Share Tech Mono', monospace;
+}

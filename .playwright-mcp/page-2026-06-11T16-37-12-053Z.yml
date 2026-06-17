@@ -1,0 +1,8 @@
+- generic [ref=e4]:
+  - generic [ref=e6]: TASKMASTER
+  - generic [ref=e7]:
+    - textbox "email" [ref=e8]
+    - textbox "password" [ref=e10]
+    - generic [ref=e11]:
+      - button "I don't have an account" [ref=e12] [cursor=pointer]
+      - button "Submit" [ref=e13] [cursor=pointer]

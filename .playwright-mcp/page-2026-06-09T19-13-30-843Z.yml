@@ -1,0 +1,43 @@
+- generic [ref=e42]:
+  - banner [ref=e43]:
+    - generic [ref=e45]: TASKMASTER
+    - generic [ref=e46]:
+      - generic [ref=e47]: TODAY'S COMPLETED
+      - generic [ref=e48]: "1"
+  - navigation [ref=e49]:
+    - link "Home" [ref=e50] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e51] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e52] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e53] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e54] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e55] [cursor=pointer]
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - textbox "new task?" [active] [ref=e59]
+        - button "+" [ref=e60] [cursor=pointer]
+      - paragraph [ref=e61]: "Here are your tasks sorted by date created:"
+      - generic [ref=e62]:
+        - generic [ref=e105]:
+          - generic [ref=e106] [cursor=pointer]: Meet Rogue at the Afterlife
+          - generic [ref=e107]:
+            - button "🗑" [ref=e108] [cursor=pointer]
+            - button "✎" [ref=e109] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e110] [cursor=pointer]
+        - generic [ref=e99]:
+          - generic [ref=e100] [cursor=pointer]: Prep the Militech security bypass
+          - generic [ref=e101]:
+            - button "🗑" [ref=e102] [cursor=pointer]
+            - button "✎" [ref=e103] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e104] [cursor=pointer]
+        - generic [ref=e64]:
+          - generic [ref=e65] [cursor=pointer]: Buy a birthday cake before 4 o'clock PM
+          - generic [ref=e66]:
+            - button "🗑" [ref=e67] [cursor=pointer]
+            - button "✎" [ref=e68] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e86] [cursor=pointer]

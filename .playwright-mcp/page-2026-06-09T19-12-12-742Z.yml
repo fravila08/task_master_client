@@ -1,0 +1,40 @@
+- generic [ref=e42]:
+  - banner [ref=e43]:
+    - generic [ref=e45]: TASKMASTER
+    - generic [ref=e46]:
+      - generic [ref=e47]: TODAY'S COMPLETED
+      - generic [ref=e48]: "1"
+  - navigation [ref=e49]:
+    - link "Home" [ref=e50] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e51] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e52] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e53] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e54] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e55] [cursor=pointer]
+  - main [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - textbox "new task?" [ref=e59]
+        - button "+" [ref=e60] [cursor=pointer]
+      - paragraph [ref=e61]: "Here are your tasks sorted by date created:"
+      - generic [ref=e64]:
+        - generic [ref=e65] [cursor=pointer]: Buy a birthday cake before 4 o'clock PM
+        - generic [ref=e66]:
+          - button "🗑" [ref=e67] [cursor=pointer]
+          - button "✎" [ref=e68] [cursor=pointer]
+          - checkbox "Mark complete" [ref=e86] [cursor=pointer]
+    - generic [ref=e88]:
+      - button "✕" [ref=e89] [cursor=pointer]
+      - textbox [ref=e90]: Buy a birthday cake before 4 o'clock PM
+      - generic [ref=e92]: June 9, 2026
+      - generic [ref=e93]: "Description:"
+      - textbox "Add a description..." [ref=e94]
+      - generic [ref=e95]:
+        - button "SAVE" [ref=e96] [cursor=pointer]
+        - button "Completed" [ref=e97] [cursor=pointer]
+        - button "DELETE" [ref=e98] [cursor=pointer]

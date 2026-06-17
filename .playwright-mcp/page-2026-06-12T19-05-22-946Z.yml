@@ -1,0 +1,25 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]: TASKMASTER
+    - generic [ref=e7]:
+      - generic [ref=e8]: TODAY'S COMPLETED
+      - generic [ref=e9]: "0"
+  - navigation [ref=e10]:
+    - link "Home" [ref=e11] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e12] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e13] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e14] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e15] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e16] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - textbox "new task?" [ref=e20]
+        - button "+" [ref=e21] [cursor=pointer]
+      - paragraph [ref=e22]: "Here are your tasks sorted by date created:"
+      - paragraph [ref=e24]: No pending tasks. You're all caught up!

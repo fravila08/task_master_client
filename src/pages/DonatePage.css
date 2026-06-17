@@ -1,0 +1,153 @@
+.donate-page {
+  max-width: 480px;
+}
+
+.donate-title {
+  margin-bottom: 1.5rem;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  font-size: 1.4rem;
+}
+
+.donate-subtitle {
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.donate-presets {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.donate-preset {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.donate-preset:hover,
+.donate-preset.active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.donate-custom {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.donate-custom-prefix {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.donate-custom-input {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.4rem 0.75rem;
+  border-radius: 2px;
+  width: 140px;
+  font-size: 0.9rem;
+}
+
+.donate-custom-input:focus {
+  outline: none;
+  border-color: var(--cyan);
+}
+
+.donate-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.donate-card-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+}
+
+.donate-card-element {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.75rem;
+}
+
+.donate-error {
+  color: var(--red);
+  font-size: 0.8rem;
+}
+
+.donate-network-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--red);
+  font-size: 0.8rem;
+}
+
+.donate-retry {
+  background: none;
+  border: 1px solid var(--red);
+  color: var(--red);
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.donate-retry:hover {
+  background: var(--red);
+  color: var(--bg);
+}
+
+.donate-submit {
+  background: var(--cyan);
+  color: var(--bg);
+  border: none;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  align-self: flex-start;
+}
+
+.donate-submit:hover:not(:disabled) {
+  box-shadow: var(--glow-cyan);
+}
+
+.donate-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.donate-success {
+  background: var(--bg-card);
+  border: 1px solid var(--cyan);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.donate-success-msg {
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  font-size: 0.9rem;
+}

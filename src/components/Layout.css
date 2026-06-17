@@ -1,0 +1,131 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  background: var(--bg-card);
+  border-bottom: 2px dashed var(--border);
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: 0.1em;
+}
+
+.logo-accent {
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.layout-daily {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+}
+
+.daily-label {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+}
+
+.daily-count {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--yellow);
+  text-shadow: var(--glow-yellow);
+}
+
+.layout-nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 1rem;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--cyan);
+  text-shadow: none;
+}
+
+.nav-link.active {
+  color: var(--cyan);
+  border-bottom-color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.nav-logout {
+  margin-left: auto;
+  background: none;
+  border: 1px solid var(--red);
+  color: var(--red);
+  border-radius: 2px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.nav-logout:hover {
+  background: var(--red);
+  color: var(--bg);
+  box-shadow: var(--glow-red);
+}
+
+.layout-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.coffee-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.coffee-btn:hover {
+  transform: scale(1.1);
+  box-shadow: var(--glow-cyan), 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.coffee-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

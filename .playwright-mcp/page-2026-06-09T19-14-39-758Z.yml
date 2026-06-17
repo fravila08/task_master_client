@@ -1,0 +1,3 @@
+- generic [ref=e4]:
+  - paragraph [ref=e5]: Oops! Something went wrong. We've been notified of this issue and will work diligently to fix it. We apologize for the inconvenience.
+  - button "home" [ref=e6] [cursor=pointer]

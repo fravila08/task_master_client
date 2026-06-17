@@ -1,0 +1,27 @@
+- generic [ref=e104]:
+  - banner [ref=e105]:
+    - generic [ref=e107]: TASKMASTER
+    - generic [ref=e108]:
+      - generic [ref=e109]: TODAY'S COMPLETED
+      - generic [ref=e110]: "1"
+  - navigation [ref=e111]:
+    - link "Home" [ref=e112] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e113] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e114] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e115] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e116] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e117] [cursor=pointer]
+  - main [ref=e118]:
+    - generic [ref=e119]:
+      - paragraph [ref=e120]: "Here are your completed tasks sorted by date created:"
+      - generic [ref=e122]:
+        - generic [ref=e123] [cursor=pointer]: Hack the Arasaka mainframe
+        - generic [ref=e124]:
+          - button "🗑" [ref=e125] [cursor=pointer]
+          - button "✎" [ref=e126] [cursor=pointer]
+          - checkbox "Mark pending" [checked] [ref=e127] [cursor=pointer]

@@ -1,0 +1,12 @@
+- generic [ref=e4]:
+  - generic [ref=e6]: TASKMASTER
+  - generic [ref=e7]:
+    - textbox "first_name" [ref=e14]
+    - textbox "last_name" [ref=e15]
+    - textbox "username" [ref=e16]
+    - textbox "email" [ref=e8]: quick@test.com
+    - textbox "password" [ref=e10]: test1234
+    - textbox "confirm password" [ref=e18]
+    - generic [ref=e11]:
+      - button "I have an account" [active] [ref=e19] [cursor=pointer]
+      - button "Submit" [ref=e13] [cursor=pointer]

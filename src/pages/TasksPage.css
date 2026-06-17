@@ -1,0 +1,64 @@
+.tasks-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-create {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.task-create-input {
+  flex: 1;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text);
+  padding: 0.55rem 0.8rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.task-create-input:focus {
+  border-color: var(--cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.task-create-btn {
+  background: var(--cyan);
+  color: var(--bg);
+  border: none;
+  border-radius: 2px;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s;
+  flex-shrink: 0;
+}
+.task-create-btn:hover { box-shadow: var(--glow-cyan); }
+
+.tasks-sort-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin: 0.25rem 0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.tasks-empty {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,42 @@
+- generic [ref=e169]:
+  - banner [ref=e170]:
+    - generic [ref=e172]: TASKMASTER
+    - generic [ref=e173]:
+      - generic [ref=e174]: TODAY'S COMPLETED
+      - generic [ref=e175]: "2"
+  - navigation [ref=e176]:
+    - link "Home" [ref=e177] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e178] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e179] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e180] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e181] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e182] [cursor=pointer]
+  - main [ref=e183]:
+    - generic [ref=e184]:
+      - paragraph [ref=e185]: Need help? Have a question? We've got your back. Reach out through any of the channels below — our team responds fast.
+      - generic [ref=e186]:
+        - heading "As a customer" [level=3] [ref=e187]
+        - list [ref=e188]:
+          - listitem [ref=e189]:
+            - generic [ref=e190]: email
+            - link "fr4v1l4@gmail.com" [ref=e191] [cursor=pointer]:
+              - /url: mailto:fr4v1l4@gmail.com
+          - listitem [ref=e192]:
+            - generic [ref=e193]: phone
+            - generic [ref=e194]: 555-555-5555
+      - generic [ref=e195]:
+        - heading "As a dev" [level=3] [ref=e196]
+        - list [ref=e197]:
+          - listitem [ref=e198]:
+            - generic [ref=e199]: github
+            - link "fravila08/task_master" [ref=e200] [cursor=pointer]:
+              - /url: https://github.com/fravila08/task_master
+          - listitem [ref=e201]:
+            - generic [ref=e202]: linkedin
+            - link "linkedin" [ref=e203] [cursor=pointer]:
+              - /url: https://linkedin.com

@@ -1,0 +1,30 @@
+- generic [ref=e128]:
+  - banner [ref=e129]:
+    - generic [ref=e131]: TASKMASTER
+    - generic [ref=e132]:
+      - generic [ref=e133]: TODAY'S COMPLETED
+      - generic [ref=e134]: "1"
+  - navigation [ref=e135]:
+    - link "Home" [ref=e136] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e137] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e138] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e139] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e140] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e141] [cursor=pointer]
+  - main [ref=e142]:
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - textbox "new task?" [ref=e145]
+        - button "+" [ref=e146] [cursor=pointer]
+      - paragraph [ref=e147]: "Here are your tasks sorted by date created:"
+      - generic [ref=e149]:
+        - generic [ref=e150] [cursor=pointer]: Buy synthwave album
+        - generic [ref=e151]:
+          - button "🗑" [ref=e152] [cursor=pointer]
+          - button "✎" [ref=e153] [cursor=pointer]
+          - checkbox "Mark complete" [ref=e154] [cursor=pointer]

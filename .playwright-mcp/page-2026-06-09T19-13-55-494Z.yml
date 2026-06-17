@@ -1,0 +1,27 @@
+- generic [ref=e145]:
+  - banner [ref=e146]:
+    - generic [ref=e148]: TASKMASTER
+    - generic [ref=e149]:
+      - generic [ref=e150]: TODAY'S COMPLETED
+      - generic [ref=e151]: "2"
+  - navigation [ref=e152]:
+    - link "Home" [ref=e153] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e154] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e155] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e156] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e157] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e158] [cursor=pointer]
+  - main [ref=e159]:
+    - generic [ref=e160]:
+      - paragraph [ref=e161]: "Here are your completed tasks sorted by date created:"
+      - generic [ref=e163]:
+        - generic [ref=e164] [cursor=pointer]: Meet Rogue at the Afterlife
+        - generic [ref=e165]:
+          - button "🗑" [ref=e166] [cursor=pointer]
+          - button "✎" [ref=e167] [cursor=pointer]
+          - checkbox "Mark pending" [checked] [ref=e168] [cursor=pointer]

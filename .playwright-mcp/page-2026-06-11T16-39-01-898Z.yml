@@ -1,0 +1,47 @@
+- generic [ref=e36]:
+  - banner [ref=e37]:
+    - generic [ref=e39]: TASKMASTER
+    - generic [ref=e40]:
+      - generic [ref=e41]: TODAY'S COMPLETED
+      - generic [ref=e42]: "0"
+  - navigation [ref=e43]:
+    - link "Home" [ref=e44] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e45] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e46] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e47] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e48] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e49] [cursor=pointer]
+  - main [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - textbox "new task?" [ref=e53]
+        - button "+" [ref=e54] [cursor=pointer]
+      - paragraph [ref=e55]: "Here are your tasks sorted by date created:"
+      - generic [ref=e56]:
+        - generic [ref=e64]:
+          - generic [ref=e73] [cursor=pointer]: Hack the Arasaka mainframe
+          - generic [ref=e66]:
+            - button "🗑" [ref=e74] [cursor=pointer]
+            - button "✎" [ref=e75] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e76] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59] [cursor=pointer]: Buy synthwave album
+          - generic [ref=e60]:
+            - button "🗑" [ref=e61] [cursor=pointer]
+            - button "✎" [ref=e62] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e63] [cursor=pointer]
+    - generic [ref=e78]:
+      - button "✕" [ref=e79] [cursor=pointer]
+      - textbox [ref=e80]: Hack the Arasaka mainframe
+      - generic [ref=e82]: June 11, 2026
+      - generic [ref=e83]: "Description:"
+      - textbox "Add a description..." [ref=e84]
+      - generic [ref=e85]:
+        - button "SAVE" [ref=e86] [cursor=pointer]
+        - button "Completed" [ref=e87] [cursor=pointer]
+        - button "DELETE" [ref=e88] [cursor=pointer]

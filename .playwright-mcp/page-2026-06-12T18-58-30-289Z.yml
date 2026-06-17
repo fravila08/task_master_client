@@ -1,0 +1,13 @@
+- generic [ref=e44]:
+  - generic [ref=e46]: TASKMASTER
+  - generic [ref=e47]:
+    - textbox "first_name" [ref=e56]: Session
+    - textbox "last_name" [ref=e57]: Tester
+    - textbox "username" [ref=e58]: sessiontester
+    - textbox "email" [ref=e48]: sessiontest99@gmail.com
+    - textbox "password" [ref=e50]: TestPass123!
+    - textbox "confirm password" [ref=e60]: TestPass123!
+    - paragraph [ref=e62]: email rate limit exceeded
+    - generic [ref=e51]:
+      - button "I have an account" [ref=e61] [cursor=pointer]
+      - button "Submit" [ref=e53] [cursor=pointer]

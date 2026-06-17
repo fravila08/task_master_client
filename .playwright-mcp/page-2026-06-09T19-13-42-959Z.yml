@@ -1,0 +1,37 @@
+- generic [ref=e112]:
+  - banner [ref=e113]:
+    - generic [ref=e115]: TASKMASTER
+    - generic [ref=e116]:
+      - generic [ref=e117]: TODAY'S COMPLETED
+      - generic [ref=e118]: "2"
+  - navigation [ref=e119]:
+    - link "Home" [ref=e120] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e121] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e122] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e123] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e124] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e125] [cursor=pointer]
+  - main [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - textbox "new task?" [ref=e129]
+        - button "+" [ref=e130] [cursor=pointer]
+      - paragraph [ref=e131]: "Here are your tasks sorted by date created:"
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e134] [cursor=pointer]: Prep the Militech security bypass
+          - generic [ref=e135]:
+            - button "🗑" [ref=e136] [cursor=pointer]
+            - button "✎" [ref=e137] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e138] [cursor=pointer]
+        - generic [ref=e139]:
+          - generic [ref=e140] [cursor=pointer]: Buy a birthday cake before 4 o'clock PM
+          - generic [ref=e141]:
+            - button "🗑" [ref=e142] [cursor=pointer]
+            - button "✎" [ref=e143] [cursor=pointer]
+            - checkbox "Mark complete" [ref=e144] [cursor=pointer]

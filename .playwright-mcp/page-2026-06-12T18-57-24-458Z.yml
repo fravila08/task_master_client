@@ -1,0 +1,9 @@
+- generic [ref=e44]:
+  - generic [ref=e46]: TASKMASTER
+  - generic [ref=e47]:
+    - textbox "email" [ref=e48]: testauth123@gmail.com
+    - textbox "password" [ref=e50]: TestPass123!
+    - paragraph [ref=e54]: Email not confirmed
+    - generic [ref=e51]:
+      - button "I don't have an account" [ref=e52] [cursor=pointer]
+      - button "Submit" [ref=e53] [cursor=pointer]

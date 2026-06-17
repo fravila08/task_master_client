@@ -1,0 +1,30 @@
+- generic [ref=e21]:
+  - banner [ref=e22]:
+    - generic [ref=e24]: TASKMASTER
+    - generic [ref=e25]:
+      - generic [ref=e26]: TODAY'S COMPLETED
+      - generic [ref=e27]: "0"
+  - navigation [ref=e28]:
+    - link "Home" [ref=e29] [cursor=pointer]:
+      - /url: /home
+    - link "All Tasks" [ref=e30] [cursor=pointer]:
+      - /url: /tasks
+    - link "Completed" [ref=e31] [cursor=pointer]:
+      - /url: /tasks/completed
+    - link "Pending" [ref=e32] [cursor=pointer]:
+      - /url: /tasks/pending
+    - link "Contact Us" [ref=e33] [cursor=pointer]:
+      - /url: /contact
+    - button "Logout" [ref=e34] [cursor=pointer]
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - paragraph [ref=e37]:
+        - text: Welcome to
+        - strong [ref=e38]: TaskMaster
+        - text: — your cyberpunk-grade productivity hub built for the mercenaries of the modern age. In Night City, every second counts. Here, so do your tasks.
+      - paragraph [ref=e39]: "This application was designed to solve the chaos that plagues every solo operative: too many jobs, too little structure. TaskMaster gives you a single, clean interface to track everything you need to do — from the small errands to the high-stakes missions."
+      - paragraph [ref=e40]: Create tasks, monitor their progress, and mark them complete as you go. Your pending jobs stay visible so nothing slips through the cracks. Completed tasks are archived for your review. Every day, a counter tracks how many you've closed — your daily edge count.
+      - paragraph [ref=e41]:
+        - text: Use the navigation above to jump between your task lists. Need help or want to reach the team? Hit
+        - strong [ref=e42]: Contact Us
+        - text: . Now jack in — there's work to be done.
