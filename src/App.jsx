@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AppProvider } from './context/AppContext'
 import ProtectedRoute from './components/ProtectedRoute'
+import PageTransition from './components/PageTransition'
 import AuthPage from './pages/AuthPage'
 import HomePage from './pages/HomePage'
 import AllTasksPage from './pages/AllTasksPage'
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <AppProvider>
       <BrowserRouter>
+        <PageTransition>
         <Routes>
           <Route path="/" element={<AuthPage />} />
           <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
@@ -25,6 +27,7 @@ export default function App() {
           <Route path="/donate" element={<ProtectedRoute><DonatePage /></ProtectedRoute>} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        </PageTransition>
       </BrowserRouter>
     </AppProvider>
   )
