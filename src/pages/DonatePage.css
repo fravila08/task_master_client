@@ -1,12 +1,9 @@
 .donate-page {
-  max-width: 480px;
-}
-
-.donate-title {
-  margin-bottom: 1.5rem;
-  color: var(--cyan);
-  text-shadow: var(--glow-cyan);
-  font-size: 1.4rem;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .donate-subtitle {
@@ -32,7 +29,7 @@
   border: 1px solid var(--border);
   color: var(--text-dim);
   padding: 0.4rem 1rem;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   font-size: 0.9rem;
   transition: border-color 0.2s, color 0.2s;
 }
@@ -60,7 +57,7 @@
   border: 1px solid var(--border);
   color: var(--text);
   padding: 0.4rem 0.75rem;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   width: 140px;
   font-size: 0.9rem;
 }
@@ -85,7 +82,7 @@
 .donate-card-element {
   background: var(--bg-input);
   border: 1px solid var(--border);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   padding: 0.75rem;
 }
 
@@ -107,7 +104,7 @@
   border: 1px solid var(--red);
   color: var(--red);
   padding: 0.3rem 0.9rem;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   font-size: 0.8rem;
   align-self: flex-start;
   transition: background 0.2s;
@@ -124,7 +121,7 @@
   border: none;
   padding: 0.65rem 1.5rem;
   font-size: 0.9rem;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   letter-spacing: 0.08em;
   transition: opacity 0.2s, box-shadow 0.2s;
   align-self: flex-start;
@@ -142,7 +139,7 @@
 .donate-success {
   background: var(--bg-card);
   border: 1px solid var(--cyan);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   padding: 1.5rem;
 }
 

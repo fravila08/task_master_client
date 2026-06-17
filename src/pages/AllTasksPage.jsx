@@ -23,6 +23,7 @@ export default function AllTasksPage() {
   return (
     <Layout>
       <div className="tasks-page">
+        <h1 className="page-heading">ALL TASKS</h1>
         <form className="task-create" onSubmit={handleAdd}>
           <input
             className="task-create-input"
@@ -36,13 +37,15 @@ export default function AllTasksPage() {
         {error && <p className="tasks-error">{error}</p>}
         <p className="tasks-sort-label">Here are your tasks sorted by date created:</p>
 
-        <div className="task-list">
-          {sorted.map(task => (
-            <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
-          ))}
-          {sorted.length === 0 && (
-            <p className="tasks-empty">No tasks yet. Create one above.</p>
-          )}
+        <div className="tasks-panel">
+          <div className="task-list">
+            {sorted.map(task => (
+              <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
+            ))}
+            {sorted.length === 0 && (
+              <p className="tasks-empty">No tasks yet. Create one above.</p>
+            )}
+          </div>
         </div>
       </div>
 

@@ -25,6 +25,7 @@ export default function PendingTasksPage() {
   return (
     <Layout>
       <div className="tasks-page">
+        <h1 className="page-heading">PENDING TASKS</h1>
         <form className="task-create" onSubmit={handleAdd}>
           <input
             className="task-create-input"
@@ -38,13 +39,15 @@ export default function PendingTasksPage() {
         {error && <p className="tasks-error">{error}</p>}
         <p className="tasks-sort-label">Here are your tasks sorted by date created:</p>
 
-        <div className="task-list">
-          {pending.map(task => (
-            <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
-          ))}
-          {pending.length === 0 && (
-            <p className="tasks-empty">No pending tasks. You're all caught up!</p>
-          )}
+        <div className="tasks-panel">
+          <div className="task-list">
+            {pending.map(task => (
+              <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
+            ))}
+            {pending.length === 0 && (
+              <p className="tasks-empty">No pending tasks. You're all caught up!</p>
+            )}
+          </div>
         </div>
       </div>
 

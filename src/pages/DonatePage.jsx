@@ -169,10 +169,12 @@ export default function DonatePage() {
   return (
     <Layout>
       <div className="donate-page">
-        <h2 className="donate-title">Buy Me a Coffee</h2>
-        <Elements stripe={stripePromise}>
-          <DonationForm />
-        </Elements>
+        <h1 className="page-heading">SUPPORT THE PROJECT</h1>
+        <div className="panel">
+          <Elements stripe={stripePromise}>
+            <DonationForm />
+          </Elements>
+        </div>
       </div>
     </Layout>
   )
