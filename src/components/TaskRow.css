@@ -1,16 +1,17 @@
 .task-row {
   display: flex;
   align-items: center;
-  background: var(--bg-card);
+  background: var(--bg-panel);
   border: 1px solid var(--border);
-  border-radius: 2px;
-  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 1rem;
   gap: 0.5rem;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .task-row:hover {
   border-color: var(--cyan-dim);
+  box-shadow: inset 0 0 0 1px var(--cyan-dim), 0 2px 8px rgba(0, 240, 255, 0.08);
 }
 
 .task-row--done {
@@ -41,7 +42,7 @@
   flex: 1;
   background: var(--bg-input);
   border: 1px solid var(--yellow);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   color: var(--text);
   padding: 0.3rem 0.5rem;
   font-size: 0.9rem;

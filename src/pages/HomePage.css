@@ -1,17 +1,109 @@
 .home-content {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
-  padding-top: 0.5rem;
+  gap: 2rem;
+}
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.home-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  letter-spacing: 0.1em;
+}
+
+.home-tagline {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stat-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.03);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  border-color: var(--cyan-dim);
+  box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.03), 0 2px 12px rgba(0, 240, 255, 0.08);
+}
+
+.stat-value {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.stat-card--pending .stat-value {
+  color: var(--yellow);
+  text-shadow: var(--glow-yellow);
+}
+
+.stat-card--done .stat-value {
+  color: #00cc66;
+  text-shadow: 0 0 8px #00cc6688, 0 0 20px #00cc6633;
+}
+
+.stat-card--daily .stat-value {
+  color: var(--red);
+  text-shadow: var(--glow-red);
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+.home-about {
+  /* inherits .panel from index.css */
 }
 
 .home-para {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text);
+}
+
+.home-para + .home-para {
+  margin-top: 1rem;
 }
 
 .home-para strong {
   color: var(--cyan);
   font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  .home-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-title {
+    font-size: 1.4rem;
+  }
 }

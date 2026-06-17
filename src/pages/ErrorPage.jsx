@@ -7,6 +7,7 @@ export default function ErrorPage() {
   return (
     <div className="error-bg">
       <div className="error-content">
+        <div className="error-code">404</div>
         <p className="error-message">
           Oops! Something went wrong. We've been notified of this issue and will work diligently to fix it. We apologize for the inconvenience.
         </p>

@@ -5,11 +5,12 @@ export default function ContactPage() {
   return (
     <Layout>
       <div className="contact-content">
+        <h1 className="page-heading">CONTACT</h1>
         <p className="contact-intro">
           Need help? Have a question? We've got your back. Reach out through any of the channels below — our team responds fast.
         </p>
 
-        <section className="contact-section">
+        <section className="contact-section panel">
           <h3 className="contact-heading">As a customer</h3>
           <ul className="contact-list">
             <li>
@@ -23,7 +24,7 @@ export default function ContactPage() {
           </ul>
         </section>
 
-        <section className="contact-section">
+        <section className="contact-section panel">
           <h3 className="contact-heading">As a dev</h3>
           <ul className="contact-list">
             <li>

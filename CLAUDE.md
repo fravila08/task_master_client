@@ -16,9 +16,12 @@ npm run lint      # ESLint across all files
 Requires a `.env` file at the project root with:
 
 ```
-VITE_SUPABASE_URL=https://<project>.supabase.co/rest/v1/
+VITE_SUPABASE_URL=https://<project>.supabase.co
 VITE_SUPABASE_KEY=<anon-key>
+VITE_STRIPE_PUBLIC_KEY=<stripe-publishable-key>
 ```
+
+Note: `VITE_SUPABASE_URL` is the bare project URL (no `/rest/v1/` suffix) — the `supabase-js` client constructs its own paths.
 
 ## Architecture
 
@@ -36,6 +39,7 @@ React Router 7 is fully wired. All routes are defined in `src/App.jsx`:
 | `/tasks/pending` | PendingTasksPage | Yes |
 | `/tasks/completed` | CompletedTasksPage | Yes |
 | `/contact` | ContactPage | Yes |
+| `/donate` | DonatePage | Yes |
 | `*` | ErrorPage | No |
 
 `ProtectedRoute` wraps auth-required pages — it reads `currentUser` from context and redirects to `/` if null.
@@ -48,14 +52,17 @@ React Router 7 is fully wired. All routes are defined in `src/App.jsx`:
 - **Tasks**: `tasks`, `addTask()`, `updateTask()`, `deleteTask()`, `toggleComplete()`
 - **Stats**: `dailyCount` — tasks toggled to completed today (derived, not stored)
 - **Request state**: `loading`, `error` — all async ops go through `withRequest()` which sets these
+- **Session gate**: `sessionLoading` — `true` until `supabase.auth.getSession()` resolves on mount; use this to avoid a flash-of-unauthenticated-content
+
+On mount, `AppContext` calls `supabase.auth.getSession()` to rehydrate a persisted session, then subscribes to `onAuthStateChange` to handle sign-out. Tasks are fetched immediately after a session is found or after `login()`.
 
 ### Service layer
 
-All Supabase calls live in `src/services/` — components never call axios directly:
+All Supabase calls live in `src/services/` — components never touch the Supabase client directly:
 
-- `supabaseClient.js` — axios instance pre-configured with `VITE_SUPABASE_URL` and `VITE_SUPABASE_KEY`
-- `userService.js` — `registerUser()`, `loginUser()` (hits `/users` table directly; no Supabase Auth)
-- `taskService.js` — `fetchTasks()`, `createTask()`, `patchTask()`, `removeTask()`
+- `supabaseClient.js` — `supabase-js` client created with `VITE_SUPABASE_URL` + `VITE_SUPABASE_KEY`
+- `userService.js` — `registerUser()`, `loginUser()`, `logoutUser()` via **Supabase Auth** (`signUp`, `signInWithPassword`, `signOut`)
+- `taskService.js` — `fetchTasks()`, `createTask()`, `patchTask()`, `removeTask()` via supabase-js table API
 - `mappers.js` — `mapUser()` / `mapTask()` convert snake_case DB rows to camelCase JS objects
 
 All service functions return camelCase objects; always go through `mappers.js` when adding new queries.
@@ -63,7 +70,7 @@ All service functions return camelCase objects; always go through `mappers.js` w
 ### Data model (Supabase schema)
 
 ```
-users  — id (uuid), first_name, last_name, username, email, password
+users  — id (uuid), first_name, last_name, username, email  [mirror of auth.users, created by DB trigger]
 tasks  — id (uuid), title, description, created_at, completed, completed_at, user_id (FK → users.id)
 ```
 

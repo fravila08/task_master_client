@@ -6,7 +6,8 @@
 
 .layout-header {
   background: var(--bg-card);
-  border-bottom: 2px dashed var(--border);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 0 rgba(0, 240, 255, 0.12);
   padding: 1.2rem 2rem;
   display: flex;
   align-items: center;
@@ -52,29 +53,30 @@
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  gap: 0;
-  padding: 0 1rem;
+  gap: 0.25rem;
+  padding: 0.4rem 1rem;
   flex-wrap: nowrap;
 }
 
 .nav-link {
   color: var(--text-dim);
   font-size: 0.8rem;
-  padding: 0.6rem 0.75rem;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  transition: color 0.2s, background 0.2s;
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
 .nav-link:hover {
   color: var(--cyan);
+  background: rgba(0, 240, 255, 0.06);
   text-shadow: none;
 }
 
 .nav-link.active {
   color: var(--cyan);
-  border-bottom-color: var(--cyan);
+  background: rgba(0, 240, 255, 0.12);
   text-shadow: var(--glow-cyan);
 }
 
@@ -98,7 +100,7 @@
 
 .layout-main {
   flex: 1;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
