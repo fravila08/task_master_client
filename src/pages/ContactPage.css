@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  /* border-radius, background, padding, box-shadow come from .panel */
 }
 
 .contact-heading {
