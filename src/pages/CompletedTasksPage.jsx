@@ -16,15 +16,18 @@ export default function CompletedTasksPage() {
   return (
     <Layout>
       <div className="tasks-page">
+        <h1 className="page-heading">COMPLETED TASKS</h1>
         <p className="tasks-sort-label">Here are your completed tasks sorted by date created:</p>
 
-        <div className="task-list">
-          {completed.map(task => (
-            <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
-          ))}
-          {completed.length === 0 && (
-            <p className="tasks-empty">No completed tasks yet. Get to work!</p>
-          )}
+        <div className="tasks-panel">
+          <div className="task-list">
+            {completed.map(task => (
+              <TaskRow key={task.id} task={task} onOpenModal={setSelectedTask} />
+            ))}
+            {completed.length === 0 && (
+              <p className="tasks-empty">No completed tasks yet. Get to work!</p>
+            )}
+          </div>
         </div>
       </div>
 
